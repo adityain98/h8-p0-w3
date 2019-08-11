@@ -1,12 +1,10 @@
 function balikString(kata){
-    var string = kata;
-    var stringlist = string.split('');
-    console.log(stringlist)
-    var hasil = '';
-    for(var i = kata.length - 1; i>=0; i--){
-        hasil = hasil + stringlist[i];
+    hasil = '';
+    for(i = kata.length - 1 ; i >= 0 ; i--){
+        hasil = hasil + kata[i];
     }
     return hasil;
 }
 
-console.log(balikString('kemarin'));
+console.log(balikString('Hello World!'));
+console.log(balikString('Balik Kata'));

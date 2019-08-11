@@ -5,37 +5,28 @@ var input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-function dataHandling(array){
-    for(i = 0; i < array.length; i++){
-        for(j = 0; j<array[i].length; j++){
+function dataHandling(data){
+    for(i = 0; i<data.length; i++){
+        for(j = 0; j<data[i].length; j++){
+            var nomor = 'Nomor ID: ';
+            var nama = 'Nama Lengkap: ';
+            var ttl = 'TTL: ';  
+            var hobi = 'Hobi: ';
             if(j == 0){
-                var nomor = array[i][j];
-                console.log(nomor);
+                console.log(nomor + data[i][j]);
             }
             else if(j == 1){
-                var nama = input[0][1];
-                console.log(nama);
+                console.log(nama + data[i][j]);
             }
             else if(j == 2){
-                var ttl = input[0][1] + ', ' + input[0][1];
-                console.log(ttl);
+                console.log(ttl + data[i][j]);
             }
             else if(j == 4){
-                var hobi = input[0][1];
-                console.log(hobi);
+                console.log(hobi + data[i][j]);
             }
         }
+        console.log('\n')
     }
 }
+
 dataHandling(input);
-
-// console.log(dataHandling(input))
-
-// Nomor ID:  0001
-// Nama Lengkap:  Roman Alamsyah
-// TTL:  Bandar Lampung 21/05/1989
-// Hobi:  Membaca
-
-
-// var i = input[0][1];
-// console.log(i)
