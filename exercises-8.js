@@ -1,14 +1,14 @@
 function pasanganTerbesar(num) {
     var arrayNum = num.toString().split('');
-    var hasil = [];
+    var hasil = 0;
     var angka1 = 0;
     var angka2 = 0;
     
     for(i=0 ; i<arrayNum.length -1 ; i++){
-        if(arrayNum[i] > angka1){
-            angka1 = arrayNum[i];
-            angka2 = arrayNum[i+1];
-            if(angka1+angka2 > hasil){
+        if(arrayNum[i] >= angka1){
+            if(arrayNum[i]+arrayNum[i+1] > hasil){
+                angka1 = arrayNum[i];
+                angka2 = arrayNum[i+1];
                 hasil = angka1+angka2;
             }
         }
@@ -22,3 +22,5 @@ function pasanganTerbesar(num) {
   console.log(pasanganTerbesar(910233)); // 91
   console.log(pasanganTerbesar(71856421)); // 85
   console.log(pasanganTerbesar(79918293)); // 99
+  console.log(pasanganTerbesar(9102393999));
+  

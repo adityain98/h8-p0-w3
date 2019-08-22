@@ -7,45 +7,47 @@ function dataHandling2(data){
     data.push('Pria', 'SMA Internasional Metro');
     console.log(data)
 
+    var descBulan= '';
     var date = data[3].split('/');
     if(date[1] == 1){
-        console.log('Januari')
+        descBulan = 'Januari';
     }
     else if(date[1] == 2){
-        console.log('Februari')
+        descBulan = 'Februari';
     }
     else if(date[1] == 3){
-        console.log('Maret')
+        descBulan = 'Maret';
     }
     else if(date[1] == 4){
-        console.log('April')
+        descBulan = 'April';
     }
     else if(date[1] == 5){
-        console.log('Mei')
+        descBulan = 'Mei';
     }
     else if(date[1] == 6){
-        console.log('Juni')
+        descBulan = 'Juni';
     }
     else if(date[1] == 7){
-        console.log('Juli')
+        descBulan = 'Juli';
     }
     else if(date[1] == 8){
-        console.log('Agustus')
+        descBulan = 'Agustus';
     }
     else if(date[1] == 9){
-        console.log('September')
+        descBulan = 'September';
     }
     else if(date[1] == 10){
-        console.log('Oktober')
+        descBulan = 'Oktober';
     }
     else if(date[1] == 11){
-        console.log('November')
+        descBulan = 'November';
     }
     else if(date[1] == 12){
-        console.log('Desember')
+        descBulan = 'Desember';
     }
 
-    console.log(date)
+    console.log(descBulan);
+    console.log(date);
 
     var tanggal = date.join('-');
     console.log(tanggal);
