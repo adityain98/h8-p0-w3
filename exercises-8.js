@@ -13,7 +13,8 @@ function pasanganTerbesar(num) {
             }
         }
     }
-    return hasil;
+    var hasilAkhir = parseInt(hasil)
+    return hasilAkhir;
   }
   
   // TEST CASES
